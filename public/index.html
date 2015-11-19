@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+</head>
+<body>
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <script type="text/javascript">
+        Parse.initialize('92S3VcMhfxvmapKwZbwGxfNbHgequyIJTa1CUUUj', 
+            'qqZBuwjZ2nrabU1IbyvwaBfLmxXc5LypxJNpc7rY');
+
+        Parse.User.logIn('kwhinnery', 'password').then(function(user) {
+            return Parse.Cloud.run('token', { device: 'browser' });
+        }).then(function(data) {
+            console.log(data);
+        }, function(err) {
+            console.log(err);
+        });
+    </script>
+</body>
+</html>

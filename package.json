@@ -1,0 +1,17 @@
+{
+  "name": "twiliochat-web",
+  "version": "1.0.0",
+  "description": "A multi-platform chat client using Twilio IP Messaging and Video SDKs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Twilio DevEd",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "twilio": "git@github.com:twilio/node-private.git#first-person-grants"
+  }
+}
